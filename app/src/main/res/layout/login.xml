@@ -6,7 +6,6 @@
     android:background="#010202">
 
     <ImageView
-        android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="550dp"
         android:background="@drawable/logo" />
@@ -15,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="204dp"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-13dp"
         android:orientation="vertical">
 
         <Button
@@ -28,7 +28,7 @@
         <Button
             android:id="@+id/signin"
             android:layout_width="350dp"
-            android:layout_height="70dp"
+            android:layout_height="74dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:text="Sign in"></Button>
