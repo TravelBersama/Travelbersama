@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Travelbersama</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="Password">Password</string>
+    <string name="Username">Username</string>
+    <string name="register">Daftar</string>
+    <string name="Daftar">Daftar</string>
+    <string name="registered">Registered</string>
+    <string name="not_registered">Not Registered</string>
+    <string name="ConfrimPassword">Confrim Password</string>
+    <string name="Already_Registered">Already Registered</string>
+    <string name="Register">Register</string>
+    <string name="welcome_user">Selamat Datang</string>
 </resources>
