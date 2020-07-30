@@ -13,4 +13,5 @@
     <string name="Already_Registered">Already Registered</string>
     <string name="Register">Register</string>
     <string name="welcome_user">Selamat Datang</string>
+    <string name="already_registered">Already Register</string>
 </resources>
