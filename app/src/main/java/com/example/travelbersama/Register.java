@@ -45,18 +45,15 @@ public class Register extends AppCompatActivity {
                 String Password = mTextPassword.getText().toString().trim();
                 String Cnf_Password = mTextCnfPassword.getText().toString().trim();
 
-                if (mTextPassword.equals(mTextCnfPassword))
-                    long val = db.addUser(Username,Password);
-                if (val > 0){
-                    Toast.makeText(Register.this,"Kamu Telah Terdaftar",Toast.LENGTH_SHORT).show();
-                    Intent moveToLogin = new Intent(Register.this,LoginActivity.class);
+                long val;
+                if (mTextPassword.equals(mTextCnfPassword)) {
+                }val = db.addUser(Username, Password);
+                if (val > 0) {
+                    Toast.makeText(Register.this, "Kamu Telah Terdaftar", Toast.LENGTH_SHORT).show();
+                    Intent moveToLogin = new Intent(Register.this, LoginActivity.class);
                     startActivity(moveToLogin);
-                }
-                else {
+                } else {
                     Toast.makeText(Register.this, "Gagal Mendaftar", Toast.LENGTH_SHORT).show();
-                }
-                else {
-                    Toast.makeText(Register.this,"Password Tidak Sama",Toast.LENGTH_SHORT).show();
                 }
             }
         });

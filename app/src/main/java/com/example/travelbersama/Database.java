@@ -1,6 +1,8 @@
 package com.example.travelbersama;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -10,6 +12,7 @@ public class Database extends SQLiteOpenHelper {
     public static final String COL_1 ="Id";
     public static final String COL_2 ="Username";
     public static final String COL_3 ="Password";
+    private SQLiteDatabase sqLiteDatabase;
 
     public Database(Context context){
         super(context, DATABASE_NAME, null,1);
@@ -17,7 +20,7 @@ public class Database extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        sqLiteDatase.execSQL("CREATE TABLE RegisterUser (ID INTEGER PRIMARY KEY AUTOINCREMENT, Username TEXT, Password TEXT)");
+        sqLiteDatabase.execSQL("CREATE TABLE RegisterUser (ID INTEGER PRIMARY KEY AUTOINCREMENT, Username TEXT, Password TEXT)");
     }
 
     @Override

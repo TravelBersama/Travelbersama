@@ -10,8 +10,8 @@
     android:gravity="center_horizontal">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="398dp"
+        android:layout_width="442dp"
+        android:layout_height="270dp"
         android:layout_marginTop="50dp"
         app:srcCompat="@drawable/logo" />
 
@@ -19,7 +19,6 @@
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:orientation="vertical">
 
         <EditText
@@ -27,10 +26,10 @@
             android:layout_width="190dp"
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
-            android:paddingLeft="2dp"
             android:background="#ffffff"
             android:drawableLeft="@drawable/username"
-            android:hint="@string/Username"/>
+            android:hint="@string/Username"
+            android:paddingLeft="2dp" />
 
         <EditText
             android:id="@+id/password"
@@ -39,7 +38,7 @@
             android:layout_marginTop="20dp"
             android:background="#ffffff"
             android:drawableLeft="@drawable/password"
-            android:hint="@string/Password"/>
+            android:hint="@string/Password" />
     </LinearLayout>
 
     <Button
@@ -57,21 +56,21 @@
         android:orientation="horizontal"
         android:layout_marginTop="12dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:paddingRight="8dp"
-            android:text="@string/not_registered"
-            android:textColor="#ffffff" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingRight="8dp"
+        android:text="@string/not_registered"
+        android:textColor="#ffffff" />
 
-        <TextView
-            android:id="@+id/register"
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:paddingLeft="18dp"
-            android:text="@string/registered"
-            android:textColor="#04ea00"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingLeft="18dp"
+        android:text="@string/registered"
+        android:textColor="#04ea00"
+        android:textStyle="bold" />
 
     </LinearLayout>
 </LinearLayout>
