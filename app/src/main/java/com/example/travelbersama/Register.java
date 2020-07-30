@@ -19,6 +19,7 @@ public class Register extends AppCompatActivity {
     TextView mTextViewLogin;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

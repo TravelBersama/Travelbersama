@@ -14,6 +14,7 @@ public class Database extends SQLiteOpenHelper {
     public static final String COL_3 ="Password";
     private SQLiteDatabase sqLiteDatabase;
 
+
     public Database(Context context){
         super(context, DATABASE_NAME, null,1);
     }
