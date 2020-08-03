@@ -165,7 +165,7 @@
                     android:layout_below="@+id/imgKereta"
                     android:layout_marginTop="15dp"
                     android:gravity="center"
-                    android:text="BOOKING\nKERETA"
+                    android:text="BOOKING\nTRAVEL"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                     android:textColor="#E91E63"
                     android:textStyle="bold" />
@@ -206,7 +206,7 @@
                     android:layout_below="@+id/imgHotel"
                     android:layout_marginTop="15dp"
                     android:gravity="center"
-                    android:text="BOOKING\nHOTEL"
+                    android:text="MAPS"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                     android:textColor="#FFCC00"
                     android:textStyle="bold" />
