@@ -105,7 +105,7 @@
                     android:layout_height="100dp"
                     android:layout_centerInParent="true"
                     android:layout_gravity="center"
-                    android:src="@drawable/abc_vector_test" />
+                    android:src="@drawable/history" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -156,8 +156,8 @@
                     android:id="@+id/imgKereta"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/book_kereta" />
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/Mobil1" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -165,7 +165,7 @@
                     android:layout_below="@+id/imgKereta"
                     android:layout_marginTop="15dp"
                     android:gravity="center"
-                    android:text="BOOKING\nTRAVEL"
+                    android:text="TravelMobil"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                     android:textColor="#E91E63"
                     android:textStyle="bold" />
@@ -198,7 +198,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/book_hotel" />
+                    android:src="@drawable/maps" />
 
                 <TextView
                     android:layout_width="match_parent"
