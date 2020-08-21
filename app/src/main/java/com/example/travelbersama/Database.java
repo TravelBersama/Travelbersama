@@ -7,11 +7,23 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class Database extends SQLiteOpenHelper {
-    public static final String DATABASE_NAME ="Register.db";
-    public static final String TABLE_NAME ="RegisterUser";
+    public static final String DATABASE_NAME = "Register.db";
+    public static final String TABLE_NAME = "RegisterUser";
     public static final String COL_1 ="Id";
-    public static final String COL_2 ="Username";
-    public static final String COL_3 ="Password";
+    public static final String COL_2 = "username";
+    public static final String COL_3 = "password";
+    public static final String COL_NAME = "name";
+    public static final String TABLE_BOOK = "tb_book";
+    public static final String COL_ID_BOOK = "id_book";
+    public static final String COL_ASAL = "asal";
+    public static final String COL_TUJUAN = "tujuan";
+    public static final String COL_TANGGAL = "tanggal";
+    public static final String COL_DEWASA = "dewasa";
+    public static final String COL_ANAK = "anak";
+    public static final String TABLE_HARGA = "tb_harga";
+    public static final String COL_HARGA_DEWASA = "harga_dewasa";
+    public static final String COL_HARGA_ANAK = "harga_anak";
+    public static final String COL_HARGA_TOTAL = "harga_total";
     private SQLiteDatabase sqLiteDatabase;
 
 
@@ -27,6 +39,17 @@ public class Database extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         sqLiteDatabase.execSQL(" DROP TABLE IF EXISTS " + TABLE_NAME);
+        db.execSQL("PRAGMA foreign_keys=ON");
+        db.execSQL("create table " + TABLE_NAME + " (" + COL_2 + " TEXT PRIMARY KEY, " + COL_3 +
+                " TEXT, " + COL_NAME + " TEXT)");
+        db.execSQL("create table " + TABLE_BOOK + " (" + COL_ID_BOOK + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                COL_ASAL + " TEXT, " + COL_TUJUAN + " TEXT" + ", " + COL_TANGGAL + " TEXT, " + COL_DEWASA + " TEXT, "
+                + COL_ANAK + " TEXT)");
+        db.execSQL("create table " + TABLE_HARGA + " (" + COL_2 + " TEXT, " + COL_ID_BOOK + " INTEGER, " +
+                COL_HARGA_DEWASA + " TEXT, " + COL_HARGA_ANAK + " TEXT, " + COL_HARGA_TOTAL +
+                " TEXT, FOREIGN KEY(" + COL_2 + ") REFERENCES " + TABLE_NAME
+                + ", FOREIGN KEY(" + COL_ID_BOOK + ") REFERENCES " + TABLE_BOOK + ")");
+        db.execSQL("insert into " + TABLE_NAME + " values ('anang@gmail.com','anang','AnangGM');");
         onCreate(sqLiteDatabase);
     }
 

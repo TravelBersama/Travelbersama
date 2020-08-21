@@ -8,7 +8,6 @@ import android.Manifest;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
-import android.view.ViewDebug;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -21,7 +20,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 
-public class GoogleMaps extends AppCompatActivity {
+public class GoogleMapsActivity extends AppCompatActivity {
 
     SupportMapFragment supportMapFragment;
     FusedLocationProviderClient client;
@@ -36,11 +35,11 @@ public class GoogleMaps extends AppCompatActivity {
 
         client = LocationServices.getFusedLocationProviderClient(this);
 
-        if (ActivityCompat.checkSelfPermission(GoogleMaps.this,
+        if (ActivityCompat.checkSelfPermission(GoogleMapsActivity.this,
                 Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
             getCurrentLocation();
         }else {
-            ActivityCompat.requestPermissions(GoogleMaps.this,
+            ActivityCompat.requestPermissions(GoogleMapsActivity.this,
                     new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 44);
         }
     }
