@@ -13,12 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProfilActivity"></activity>
-        <activity android:name=".ProfilActivity" />
-        <activity android:name=".HistoryAdapter" />
-        <activity android:name=".HistoryModel" />
+        <activity android:name=".HistoryModel"></activity>
         <activity android:name=".SessionManager" />
-        <activity android:name=".HistoryActivity">
+        <activity android:name=".ProfilActivity" />
+        <activity android:name=".GoogleMapsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
